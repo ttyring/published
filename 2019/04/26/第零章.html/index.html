@@ -89,7 +89,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://s2.ax1x.com/2019/04/27/Eu9E7j.jpg">
 <meta property="og:image" content="https://s2.ax1x.com/2019/04/27/Eu9K3V.jpg">
-<meta property="og:updated_time" content="2019-04-26T17:06:38.160Z">
+<meta property="og:updated_time" content="2019-04-28T06:50:52.346Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="第零章">
 <meta name="twitter:description" content="第零章 - 黑白显形江湖路，半式神剑乾坤篇  飞白夜遇一黑影。 清风拂面，耳微动，瞥见青树翠蔓中飞出个黑白无常，回首定睛，原是只小虎儿。 出言笑道：“好个猫儿，可敢接我一剑。” 小虎伸手便打笑脸人，招毕，二者转身各自去了，相忘于江湖。    飞白听得真切，远处传来三声：妙，妙，妙啊。 也不知妙在何处？ 欲知妙事如何，且听下回分解。">
@@ -103,7 +103,7 @@
     root: '/',
     scheme: 'Pisces',
     version: '5.1.4',
-    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -127,6 +127,16 @@
 
 
 
+<script>
+    (function(){
+        if('123'){
+            if (prompt('请输入密码') !== '123'){
+                alert('密码错误');
+                history.back();
+            }
+        }
+    })();
+</script>
 <span class="post-count"></span>
 
 
@@ -502,6 +512,13 @@
       
 
       
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
 
     </div>
   </aside>
@@ -549,11 +566,6 @@
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
     
@@ -708,5 +720,5 @@
 
   <!-- 页面点击小红心 -->
 <script type="text/javascript" src="/js/src/clicklove.js"></script>
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":-100,"width":300,"height":600},"mobile":{"show":true}});</script></body>
 </html>
