@@ -17,7 +17,7 @@
 <meta property="og:description" content="键盘和网络实现两个小目标1：禁用笔记本键盘2：网线连接内网工作，WIFI连接互联网冲浪">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://github.com/truyun/truyun.github.io/blob/master/image/glass_cat.jpg">
-<meta property="og:updated_time" content="2020-01-17T10:45:10.208Z">
+<meta property="og:updated_time" content="2020-01-19T00:58:01.160Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="笔记本小技巧">
 <meta name="twitter:description" content="键盘和网络实现两个小目标1：禁用笔记本键盘2：网线连接内网工作，WIFI连接互联网冲浪">
@@ -183,12 +183,12 @@
 </blockquote>
 <p>以<strong>管理员</strong>身份运行命令行指示符，运行以下指令，重启后生效</p>
 <ul>
-<li><p>关闭笔记本键盘</p>
+<li><p>关闭笔记本键盘并重启</p>
 <blockquote>
 <p>sc config i8042prt start= disabled<br>shutdown -r -t 0</p>
 </blockquote>
 </li>
-<li><p>开启笔记本键盘</p>
+<li><p>开启笔记本键盘并重启</p>
 <blockquote>
 <p>sc config i8042prt start= auto<br>shutdown -r -t 0</p>
 </blockquote>
@@ -199,7 +199,7 @@
 <blockquote>
 <p>route delete 0.0.0.0<br>route delete 10.0.0.0<br>route add 0.0.0.0 mask 0.0.0.0 192.168.43.1 -P   metric 1<br>route add 10.0.0.0 mask 255.0.0.0 192.168.0.1  -P  metric 3<br>echo. &amp; pause<br>exit</p>
 </blockquote>
-<p>2.1在第三行中，把192.168.43.1 改成自己无线网IPv4 DNS服务器的地址<br>（连接WIFI后，WIFI名字下方点击属性，找到IPv4 DNS服务器的地址）<br>2.2在第四行中，把192.168.0.1 改成网线的默认网关，通常默认为192.168.0.1无需修改<br>（网络和共享位置中心-&gt;以太网-&gt;详细信息）找到IPv4 默认网关</p>
+<p>2.1 在第三行中，把192.168.43.1 改成自己无线网IPv4 DNS服务器的地址<br>（连接WIFI后，WIFI名字下方点击属性，找到IPv4 DNS服务器的地址）<br>2.2 在第四行中，把192.168.0.1 改成网线的默认网关，通常默认为192.168.0.1无需修改<br>（网络和共享位置中心-&gt;以太网-&gt;详细信息）找到IPv4 默认网关</p>
 <blockquote>
 <p>同时连上WIFI和网线后，运行net.bat就可以同时网上冲浪驰骋，坐拥双倍快乐</p>
 </blockquote>
