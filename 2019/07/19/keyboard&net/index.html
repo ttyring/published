@@ -17,7 +17,7 @@
 <meta property="og:description" content="键盘和网络实现两个小目标  禁用笔记本键盘 网线连接内网工作，WIFI连接互联网冲浪">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://truyun.github.io/2019/07/19/keyboard&net/glass_cat.jpg">
-<meta property="og:updated_time" content="2020-01-19T07:21:57.072Z">
+<meta property="og:updated_time" content="2020-01-20T08:50:28.724Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="键盘与网络小技巧">
 <meta name="twitter:description" content="键盘和网络实现两个小目标  禁用笔记本键盘 网线连接内网工作，WIFI连接互联网冲浪">
@@ -64,9 +64,9 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/categories/随笔/">随笔</a></li>
+				<li><a href="/tags/随笔/">随笔</a></li>
 	        
-				<li><a href="/categories/技术/">技术</a></li>
+				<li><a href="/tags/技术/">技术</a></li>
 	        
 			</ul>
 		</nav>
@@ -77,7 +77,7 @@
     			
             
     			
-    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
     			
             
 		</nav>
@@ -138,9 +138,9 @@
 				
 					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/categories/随笔/">随笔</a></li>
+					<li style="width: 33.333333333333336%"><a href="/tags/随笔/">随笔</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/categories/技术/">技术</a></li>
+					<li style="width: 33.333333333333336%"><a href="/tags/技术/">技术</a></li>
 		        
 				</ul>
 			</nav>
@@ -182,7 +182,7 @@
 </ul>
 <a id="more"></a>
 
-<h3 id="1-键盘"><a href="#1-键盘" class="headerlink" title="1. 键盘"></a>1. 键盘</h3><blockquote>
+<h3 id="1-键盘—-禁用笔记本键盘"><a href="#1-键盘—-禁用笔记本键盘" class="headerlink" title="1. 键盘—-禁用笔记本键盘"></a>1. 键盘—-禁用笔记本键盘</h3><blockquote>
 <p>大学宿舍的桌子不够宽，键盘如果放在笔记本前方，写代码时双手悬空没有支撑的地方<br>键盘如果放在自带的键盘上方，又会不经意按到自带的键盘<br>这可愁死我了.jpg<br>于是，想把自带的键盘禁用。在互联网的帮助下，找到如下解决方案，感恩开源</p>
 </blockquote>
 <p>以<strong>管理员</strong>身份运行命令行指示符，运行以下指令，重启后生效</p>
@@ -199,7 +199,7 @@
 </li>
 </ul>
 <hr>
-<h3 id="2-网络"><a href="#2-网络" class="headerlink" title="2. 网络"></a>2. 网络</h3><p>使用说明：复制以下命令另存为net.bat</p>
+<h3 id="2-网络—-网线连接内网工作，WIFI连接互联网冲浪"><a href="#2-网络—-网线连接内网工作，WIFI连接互联网冲浪" class="headerlink" title="2. 网络—-网线连接内网工作，WIFI连接互联网冲浪"></a>2. 网络—-网线连接内网工作，WIFI连接互联网冲浪</h3><p>使用说明：复制以下命令另存为net.bat</p>
 <blockquote>
 <p>route delete 0.0.0.0<br>route delete 10.0.0.0<br>route add 0.0.0.0 mask 0.0.0.0 192.168.43.1 -P   metric 1<br>route add 10.0.0.0 mask 255.0.0.0 192.168.0.1  -P  metric 3<br>echo. &amp; pause<br>exit</p>
 </blockquote>
@@ -214,6 +214,11 @@
     </div>
     <div class="article-info article-info-index">
       
+        <div class="article-pop-out tagcloud">
+          <i class="icon-tuding"></i>
+          <a class="article-tag-list-link color3">置顶</a>
+        </div>
+      
       
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
@@ -227,17 +232,6 @@
 	</div>
 
       
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/技术//" class="article-tag-list-link color3">技术</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
 
       
 
@@ -327,6 +321,19 @@
         </div>
         
         
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#键盘和网络"><span class="toc-number">1.</span> <span class="toc-text">键盘和网络</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-键盘—-禁用笔记本键盘"><span class="toc-number">1.1.</span> <span class="toc-text">1. 键盘—-禁用笔记本键盘</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-网络—-网线连接内网工作，WIFI连接互联网冲浪"><span class="toc-number">1.2.</span> <span class="toc-text">2. 网络—-网线连接内网工作，WIFI连接互联网冲浪</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
     </div>
 </aside>
 
@@ -404,7 +411,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
         
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
       
         
     </ul>
@@ -480,13 +487,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
 
     
-
-    
-    	<section class="tools-section tools-section-me" q-show="aboutme">
-  	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
-  	  	
+    	<section class="tools-section tools-section-friends" q-show="friends">
+  		
+        <ul class="search-ul">
+          
+            <li class="search-li">
+              <a href="http://www.google.com" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>Google</a>
+            </li>
+          
+        </ul>
+  		
     	</section>
+    
+
     
   </div>
   
