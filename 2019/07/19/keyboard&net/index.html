@@ -17,7 +17,7 @@
 <meta property="og:description" content="键盘和网络实现两个小目标  禁用笔记本键盘 网线连接内网工作，WIFI连接互联网冲浪">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://truyun.github.io/2019/07/19/keyboard&net/glass_cat.jpg">
-<meta property="og:updated_time" content="2020-01-20T08:50:28.724Z">
+<meta property="og:updated_time" content="2020-01-20T08:57:01.275Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="键盘与网络小技巧">
 <meta name="twitter:description" content="键盘和网络实现两个小目标  禁用笔记本键盘 网线连接内网工作，WIFI连接互联网冲浪">
@@ -74,10 +74,6 @@
     		
     			
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
-    			
-            
-    			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
     			
             
 		</nav>
@@ -378,7 +374,7 @@
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
-		showTags: false
+		showTags: true
 	}
 </script>
 
@@ -397,21 +393,13 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
       
     
-      
-      
-      
-    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
-      
-        
-      
-      <li style="width: 50%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      <li style="width: 100%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
     </ul>
@@ -432,15 +420,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">往事</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">技术</a>
               </li>
             
             <div class="clearfix"></div>
@@ -486,18 +474,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     	</section>
     
 
-    
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://www.google.com" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>Google</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
     
 
     

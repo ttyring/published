@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="李飞白的博客">
 <meta property="og:description" content="Windows关闭本地服务鸣谢：https://blog.csdn.net/tianjun2012/article/details/79806760思路：根据端口号找到PID，再关闭服务 在终端中使用hexo s可以在本地预览，使用crtl+c停止服务。可是如果关闭终端窗口，又怎么关闭服务呢？">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-01-20T08:48:40.644Z">
+<meta property="og:updated_time" content="2020-01-20T08:57:00.275Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【更新中】hexo使用心得">
 <meta name="twitter:description" content="Windows关闭本地服务鸣谢：https://blog.csdn.net/tianjun2012/article/details/79806760思路：根据端口号找到PID，再关闭服务 在终端中使用hexo s可以在本地预览，使用crtl+c停止服务。可是如果关闭终端窗口，又怎么关闭服务呢？">
@@ -72,10 +72,6 @@
     		
     			
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
-    			
-            
-    			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
     			
             
 		</nav>
@@ -367,7 +363,7 @@
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
-		showTags: false
+		showTags: true
 	}
 </script>
 
@@ -386,21 +382,13 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
       
     
-      
-      
-      
-    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
-      
-        
-      
-      <li style="width: 50%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      <li style="width: 100%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
     </ul>
@@ -421,15 +409,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">往事</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">技术</a>
               </li>
             
             <div class="clearfix"></div>
@@ -475,18 +463,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     	</section>
     
 
-    
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://www.google.com" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>Google</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
     
 
     
