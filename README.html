@@ -8,14 +8,17 @@
   <link rel="dns-prefetch" href="https://truyun.github.io">
   <title>飞白子博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="blog">
+<meta property="og:type" content="website">
 <meta property="og:title" content="飞白子博客">
 <meta property="og:url" content="https://truyun.github.io/README.html">
 <meta property="og:site_name" content="飞白子博客">
+<meta property="og:description" content="blog">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-07-20T02:58:51.091Z">
+<meta property="og:updated_time" content="2020-07-20T03:19:22.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="飞白子博客">
+<meta name="twitter:description" content="blog">
   
     <link rel="alternative" href="/atom.xml" title="飞白子博客" type="application/atom+xml">
   
@@ -154,7 +157,8 @@
     
   <div class="article-entry" itemprop="articleBody">
     
-    
+    <p><a href="tianry.xyz">blog</a></p>
+
     
 
     
@@ -282,7 +286,7 @@
         const reg = /^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
         // if (!email.value || !nick.value || !reg.test(email.value)) {
         if (!nick.value || !reg.test(email.value)) {
-            const str = `<div class="valert txt-center"><div class="vtext">请填写正确的昵称！</div></div>`;
+            const str = `<div class="valert txt-center"><div class="vtext">请填写正确的昵称和邮箱！</div></div>`;
             const vmark = document.querySelector('.vmark');
             vmark.innerHTML = str;
             vmark.style.display = 'block';
@@ -332,7 +336,7 @@
         const reg = /^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
         // if (!email.value || !nick.value || !reg.test(email.value)) {
         if (!nick.value || !reg.test(email.value)) {
-            const str = `<div class="valert txt-center"><div class="vtext">请填写正确的昵称！</div></div>`;
+            const str = `<div class="valert txt-center"><div class="vtext">请填写正确的昵称和邮箱！</div></div>`;
             const vmark = document.querySelector('.vmark');
             vmark.innerHTML = str;
             vmark.style.display = 'block';
